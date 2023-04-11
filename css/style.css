@@ -22,3 +22,12 @@ body {
 .sub {
   font-size: 25px;
 }
+.formcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.formcontrol {
+  display: flex;
+  flex-direction: column;
+}

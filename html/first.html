@@ -15,8 +15,8 @@
           <span class="sub"> Web</span>
         </h1>
         <form action="">
-          <div class="form container">
-            <div class="form control">
+          <div class="formcontainer">
+            <div class="formcontrol">
               <label for="firstname">First Name</label>
               <input
                 type="text"
@@ -26,7 +26,7 @@
                 required
               />
             </div>
-            <div class="form control">
+            <div class="formcontrol">
               <label for="secondname">Second Name</label>
               <input
                 type="text"
@@ -36,7 +36,7 @@
                 required
               />
             </div>
-            <div class="form control">
+            <div class="formcontrol">
               <label for="email">Email</label>
               <input
                 type="email"
@@ -46,9 +46,9 @@
                 required
               />
             </div>
-            <div class="form control">
-              <label for="jobrole">Email</label>
-              <select>
+            <div class="formcontrol">
+              <label for="jobrole">Job Role</label>
+              <select name="jobrole" id="jobrole" required>
                 <option value="">Select Your JobRole</option>
                 <option value="forentend">ForentEnd</option>
                 <option value="BackEnd">BackEnd</option>
@@ -56,6 +56,62 @@
                 <option value="UI">UserInterface</option>
               </select>
             </div>
+            <div class="formcontrol">
+              <label for="address">Address</label><br />
+              <textarea
+                name="address"
+                id="address"
+                rows="4"
+                cols="50"
+                placeholder="Address"
+              >
+              </textarea>
+            </div>
+            <div class="formcontrol">
+              <label for="city">City</label>
+              <select name="city" id="city" required>
+                <option value="">Select Your City</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Rawalpindi">Rawalpindi</option>
+                <option value="Skardu">Skardu</option>
+                <option value="Gilgit">Gilgit</option>
+                <option value="Khaplu">Khaplu</option>
+              </select>
+            </div>
+            <div class="formcontrol">
+              <label for="zipcode">Zip Code</label>
+              <input
+                type="number"
+                name="zipcode"
+                id="zipcode"
+                placeholder="Enter Your ZipCode"
+                required
+              />
+            </div>
+            <div class="formcontrol">
+              <label for="date">Date</label>
+              <input
+                type="date"
+                name="date"
+                id="date"
+                placeholder="Enter Date"
+                required
+              />
+            </div>
+            <div class="formcontrol">
+              <label for="cv">Uplod CV</label>
+              <input
+                type="file"
+                name="cv"
+                id="cv"
+                placeholder="Upload CV"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="buttoncont">
+            <button type="submit">Apply Now</button>
           </div>
         </form>
       </div>
