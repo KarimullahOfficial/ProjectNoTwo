@@ -4,10 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Employee Form</title>
+    <title>Job Application Form</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <h1>i m heading one</h1>
+    <div class="container">
+      <div class="applybox">
+        <h1>
+          Job Application
+          <span class="sub"> Web</span>
+        </h1>
+        <form action="">
+          <div class="form container">
+            <div class="form control">
+              <label for="firstname">First Name</label>
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="Enter FirstName"
+                required
+              />
+            </div>
+            <div class="form control">
+              <label for="secondname">Second Name</label>
+              <input
+                type="text"
+                name="secondname"
+                id="secondname"
+                placeholder="Enter  Second Name"
+                required
+              />
+            </div>
+            <div class="form control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Email"
+                required
+              />
+            </div>
+            <div class="form control">
+              <label for="jobrole">Email</label>
+              <select>
+                <option value="">Select Your JobRole</option>
+                <option value="forentend">ForentEnd</option>
+                <option value="BackEnd">BackEnd</option>
+                <option value="FullStack">FullStack</option>
+                <option value="UI">UserInterface</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
